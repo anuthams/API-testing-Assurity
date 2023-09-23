@@ -75,8 +75,10 @@ class TestRunner():
 
     def test_promo_gallery_desc(self) -> None:
         """Tests if there is a Promotions element with a Name property 'Gallery' which has a  
-        Description containing the text 'Good position in category. Raises an
-        AssersionError if the test fails.
+        Description containing the text 'Good position in category.
+        Note that this will ignore any subsequent Gallery elements beyond the first 
+        within the Promotions in an entry.
+        Raises an AssersionError if the test fails.
         """
         entry_promotions: list[dict] | None = self.json.get("Promotions")
         assert entry_promotions is not None, f"Expected to find a Promotions element but got {entry_promotions} instead."
