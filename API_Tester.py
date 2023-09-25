@@ -4,10 +4,8 @@ Author: Anutham Suresh
 Module for Testing API, and generating log files with test outcomes.
 
 Changelog:
-    -Separated functions for setup and batching of tests from the API tests.
+    -Updated README and requirements.txt
 
-TODO:
-    - add readme including installation steps.
 
 """
 

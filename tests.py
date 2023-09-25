@@ -5,32 +5,19 @@ Module for Testing API, provides the TestRunner class that performs checks that
 the given URL matches the specified criteria.
 
 Changelog:
-    - Moved all test running functionality to API_Tester.py, which now functions
-    as the top-level module.
-    - TestRunner() changed to Tester() to better match function of the class.
-    - Added logger object with name API_Test_log so that all events are passed 
-    to the same logger across the package.
-
-TODO:
-    - add readme including installation steps.
+    -Updated README and requirements.txt
+    -Removed unneeded imports.
 
 """
 
 # Top-level imports
 
 # Builtin packages
-import argparse
 import logging
 import sys
-import os
-import time
-from datetime import datetime
 
 # Third-party packages
 import requests
-
-# create a folder named 'logs' in the current directory by default.
-DEFAULT_LOGPATH = os.path.join(".", "logs")
 
 # Add the API_Test_log logger to the module.
 logger = logging.getLogger("API_Test_log")
