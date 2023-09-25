@@ -42,3 +42,12 @@ options:
   -l LOGPATH, --logpath LOGPATH
                         Path to folder for log files. Defaults to ./logs
 ```
+
+Example ``.txt`` file for URLs:
+
+```
+https://domain_1_here
+https://domain_2_here
+https://domain_3_here
+https://domain_4_here
+```
