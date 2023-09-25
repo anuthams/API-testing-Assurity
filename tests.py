@@ -52,10 +52,13 @@ class Tester():
         """
         # do a GET request on the URL
         try:
-            response = requests.get(url_to_get, **kwargs)
+            response = requests.get(url_to_get, timeout=5, **kwargs)
         except requests.exceptions.RequestException as err:
             logger.error(err)  # TODO: log the error and exit nicely
             sys.exit(1)
+
+        #TODO: Would be nice to have more error handling around responses containing
+        #status codes.
 
         # Then return the JSON as a dict
         try:
